@@ -1,8 +1,8 @@
-# A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in Mycobacterium tuberculosis
+# A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in *Mycobacterium tuberculosis*
 ### Brief overview
 In this study, we applied this machine learning (ML) framework to predict resistance phenotypes for 12 anti-tuberculosis drugs while outputting SNPs associated with resistance. Then, the SHapley Additive exPlanations (SHAP) framework was used to decipher why and how decisions were made in the optimal algorithm. Lastly, we applied the models to predict the resistance phenotype to rifampicin (RIF) and isoniazid (INH) in an additional independent MTB isolates dataset from India.
 ### Programming codes
-These are the programming codes used in our paper "A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in Mycobacterium tuberculosis". 
+These are the programming codes used in our paper "A Machine Learning Framework to Antimicrobial Resistance Prediction and Characterization of AMR-Related SNPs in *Mycobacterium tuberculosis*". 
 
 ### Get Started
 Follow these steps to install packages and run the examples.
