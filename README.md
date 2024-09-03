@@ -13,9 +13,9 @@ Follow these steps to install packages and run the examples.
 - Tools: Jupyter Notebook; Rstudio
   
 ### Step 1: Ensure Jupyter Notebook and Conda are Installed
-First, you need to ensure that Jupyter Notebook [Jupyter Notebook](https://jupyter.org/install) and ○ [Miniconda](https://docs.anaconda.com/miniconda/) ○ [Anaconda](https://www.anaconda.com/download/) are installed in your system. 
+First, you need to ensure that ○ [Jupyter Notebook](https://jupyter.org/install) and ○ [Miniconda](https://docs.anaconda.com/miniconda/) or ○ [Anaconda](https://www.anaconda.com/download/) are installed in your system. 
 
-  
+
 ### Step 2: Create a virtual environment and Install Packages from env/files
 #### Build the Projects 
 ##### First, clone this repository to your local machine:
@@ -28,8 +28,6 @@ cd MTB-AMR-Programming-codes-0826
 ```bash
 cd MTB-AMR-Programming-codes-0826/env
 conda env create -f AMR_env.yml
-conda activate AMR_env
-conda install ipykernel # assure this is installed.
 ```
 #### Method 2:
 ```bash
@@ -42,7 +40,10 @@ pip install -r AMR_env.txt
 
 ```
 conda activate AMR_env
-python -m ipykernel install --user --name AMR_env --display-name "AMR_env" # Register this AMR_env as a kernel for Jupyter Notebook.
+# assure ipykernel is installed.
+# conda install ipykernel
+# Register this AMR_env as a kernel for Jupyter Notebook.
+python -m ipykernel install --user --name AMR_env --display-name "AMR_env" 
 ```
 
 ### Step4: Run the workflow:
