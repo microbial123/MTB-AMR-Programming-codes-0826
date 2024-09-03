@@ -1,6 +1,8 @@
 rm(list=ls())
-
+install.packages("ggplot2")
+install.packages("patchwork")
 library(ggplot2)
+library(patchwork)
 
 dataRIF <- data.frame(
   Group = rep(c("Training Dataset", "Validation Dataset"), each = 2),
@@ -31,7 +33,8 @@ p1 <- ggplot(dataRIF, aes(x = Group, y = Percentage, fill = Category)) +
          axis.title.x = element_blank(), 
          axis.text.y = element_text(face = "bold", color = "black"),
          legend.position = "bottom", 
-         legend.text = element_text(face = "bold", color = "black")) +
+         legend.text = element_text(face = "bold", color = "black"),
+         legend.title = element_blank()) +
   geom_text(aes(label = paste0(Percentage, "%")), position = position_stack(vjust = 0.5), size = 4)
 p1
 graph2ppt(file="Figure3ARIF.pptx", width=7, height=5)
@@ -51,9 +54,17 @@ p2 <- ggplot(dataINH, aes(x = Group, y = Percentage, fill = Category)) +
          axis.title.x = element_blank(), 
          axis.text.y = element_text(face = "bold", color = "black"),
          legend.position = "bottom", 
-         legend.text = element_text(face = "bold", color = "black")) +
+         legend.text = element_text(face = "bold", color = "black"),
+         legend.title = element_blank()) +
   geom_text(aes(label = paste0(Percentage, "%")), position = position_stack(vjust = 0.5), size = 4)
 p2
 graph2ppt(file="Figure3AINH.pptx", width=7, height=5)
+
+
+#patchwork
+p1 + p2
+graph2ppt(file="Figure3A.pptx", width=7, height=5)
+
+
 
 

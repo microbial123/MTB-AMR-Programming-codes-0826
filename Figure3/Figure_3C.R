@@ -1,6 +1,9 @@
 
 library(ggplot2)
 library(scales)  # percent() 
+install.packages("patchwork")
+library(patchwork)
+
 dataRIF <- data.frame(
   Metric = c("Accuracy", "Precision", "Recall"),
   Value = c(90.96, 99.17, 89.47)
@@ -14,7 +17,7 @@ dataINH <- data.frame(
 #Figure 2 RIF 
 golden_color <- "#FFD700"
 dataRIF_performance <- ggplot(dataRIF, aes(x = Metric, y = Value, fill = golden_color)) +
-  geom_bar(stat = "identity", color = "black", fill = golden_color)  +
+  geom_bar(stat = "identity", color = "NA", fill = golden_color)  +
   geom_text(aes(label = paste0(Value, "%")), vjust = -0.5) + 
   scale_y_continuous(name = "Percentage (%)") + 
   theme_bw() +
@@ -33,7 +36,7 @@ dataRIF_performance
 #Figure 3 INH
 blue_color <- "#4682B4"
 dataINH_performance <- ggplot(dataINH, aes(x = Metric, y = Value, fill = blue_color)) +
-  geom_bar(stat = "identity", color = "black", fill = blue_color)  +
+  geom_bar(stat = "identity", color = "NA", fill = blue_color)  +
   geom_text(aes(label = paste0(Value, "%")), vjust = -0.5) + 
   scale_y_continuous(name = "Percentage (%)") + 
   theme_bw() +
@@ -49,3 +52,7 @@ dataINH_performance <- ggplot(dataINH, aes(x = Metric, y = Value, fill = blue_co
          legend.position = "none")
 
 dataINH_performance 
+
+
+dataRIF_performance + dataINH_performance 
+graph2ppt(file="Figure3C.pptx", width=7, height=5)
