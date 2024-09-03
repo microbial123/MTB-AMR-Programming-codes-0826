@@ -55,13 +55,11 @@ Open the notebook: Navigate to **Figure_2.ipynb**.<br>
 
 Execute the notebook: Run all cells in order.<br>
 
-## Note: You can adjust the number "n_jobs=16" flexibly based on your system! 
-
 #### Select "Kernel" from the menu, then choose "Change kernel".From the list, select "AMR_env".
 
 ![select "AMR_env"](https://github.com/microbial123/MTB-AMR-Programming-codes-0826/blob/main/env/env_kernel.png)
 
-
+## Note: You can adjust the number "n_jobs=16" flexibly based on your system! 
 ### Figure2_Input
 >./Data/rifampicin.csv
 ./Data/rifampicin_to_predict_MTB.csv
