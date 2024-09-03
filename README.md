@@ -11,8 +11,14 @@ Follow these steps to install packages and run the examples.
 - Language: Python=3.8.15; R=4.0
 - Libraries: Pandas, NumPy, Scikit-Learn, Matplotlib, shap, etc.
 - Tools: Jupyter Notebook; Rstudio
-
-### Create a virtual environment:
+  
+### Step 1: Ensure Jupyter Notebook and Conda are Installed
+You need to ensure that Jupyter Notebook is installed in your system [Jupyter Notebook](https://jupyter.org/install).
+Install Miniconda or Anaconda: If you haven't installed Miniconda or Anaconda yet, download and install it from the official website.
+  ○ [Miniconda](https://docs.anaconda.com/miniconda/)
+  ○ [Anaconda](https://www.anaconda.com/download/)
+  
+### Step 2: Create a virtual environment and Install Packages from env/files
 #### Build the Projects 
 ##### First, clone this repository to your local machine:
 ```bash
@@ -25,6 +31,7 @@ cd MTB-AMR-Programming-codes-0826
 cd MTB-AMR-Programming-codes-0826/env
 conda env create -f AMR_env.yml
 conda activate AMR_env
+conda install ipykernel # assure this is installed.
 ```
 #### Method 2:
 ```bash
@@ -33,20 +40,29 @@ python -V
 pip install -r AMR_env.txt
 ```
 
-### Run the workflow:
-### Figure2_Input
->./Data/rifampicin.csv
-./Data/rifampicin_to_predict_MTB.csv
+### step3 Launch Jupyter Notebook and Specify the AMR_env Kernel
 
-### Running the Code
-Start Jupyter Notebook:
+```
+conda activate AMR_env
+python -m ipykernel install --user --name AMR_env --display-name "AMR_env" # kernel
+```
+
+Start Jupyter Notebook in your system :
 ```bash
 jupyter notebook
 cd MTB-AMR-Programming-codes-0826/Figure2
 ```
+#### Select "Kernel" from the menu, then choose "Change kernel".From the list, select "AMR_env".
 
+![select "AMR_env"](https://github.com/microbial123/MTB-AMR-Programming-codes-0826/blob/main/env/env_kernel.png)
+
+### Step 3 Run the workflow:
 Open the notebook: Navigate to **Figure_2.ipynb**.<br>
 Execute the notebook: Run all cells in order.<br>
+
+### Figure2_Input
+>./Data/rifampicin.csv
+./Data/rifampicin_to_predict_MTB.csv
 
 ### Figure2_Output
 
@@ -212,14 +228,12 @@ Open the Rstudio: Navigate to **./Figure3/Figure3A.R**<br>
 Execute the Rstudio: Run the scripts.<br>
 
 ### Figure3_Output3
->./Figure3/Figure3A_RIF.png
-./Figure3/Figure3A_INH.png
+>./Figure3/Figure3A.pptx
 
 Open the Rstudio: Navigate to **./Figure3/Figure3C.R** <br>
 Execute the Rstudio: Run the scripts.<br>
 ### Figure3_Output3
->./Figure3/Figure3C_INH.png
-./Figure3/Figure3C_RIF.png
+>./Figure3/Figure3C.pptx
 
 
 #### For any questions or issues, please contact Mao at microbial_research@163.com.<br>
