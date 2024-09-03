@@ -52,7 +52,10 @@ Start Jupyter Notebook in your system :
 jupyter notebook
 ```
 Open the notebook: Navigate to **Figure_2.ipynb**.<br>
+
 Execute the notebook: Run all cells in order.<br>
+
+## Note: You can adjust the number "n_jobs=16" flexibly based on your system! 
 
 #### Select "Kernel" from the menu, then choose "Change kernel".From the list, select "AMR_env".
 
