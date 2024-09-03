@@ -59,9 +59,10 @@ Execute the notebook: Run all cells in order.<br>
 
 ![select "AMR_env"](https://github.com/microbial123/MTB-AMR-Programming-codes-0826/blob/main/env/env_kernel.png)
 
-<br>
-## Note: You can adjust the number "n_jobs=16" flexibly based on your system! 
-<br>
+
+### Note: You can adjust the number "n_jobs=16" flexibly based on your system! 
+
+
 ### Figure2_Input
 >./Data/rifampicin.csv
 ./Data/rifampicin_to_predict_MTB.csv
