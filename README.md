@@ -24,17 +24,12 @@ git clone https://github.com/microbial123/MTB-AMR-Programming-codes-0826.git
 cd MTB-AMR-Programming-codes-0826
 ```
 
-#### Method 1: 
+#### Method: 
 ```bash
 cd MTB-AMR-Programming-codes-0826/env
 conda env create -f AMR_env.yml
 ```
-#### Method 2:
-```bash
-#install python==3.8.15
-python -V 
-pip install -r AMR_env.txt
-```
+
 
 ### step3: Launch Jupyter Notebook and Specify the AMR_env Kernel
 
