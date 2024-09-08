@@ -111,11 +111,11 @@ Execute the notebook: Run all cells in order.<br>
 cd MTB-AMR-Programming-codes-0826/Figure3
 ```
 Open the notebook: Navigate to **Figure_3.ipynb**.<br>
-Execute the notebook: Run all cells in order.<br>
 
 ### Switch the environment to the AMR_env kernel.
 ![manually select "AMR_env" kernel](https://github.com/microbial123/MTB-AMR-Programming-codes-0826/blob/main/env/Figure3.png)
 
+Execute the notebook: Run all cells in order.<br>
 ### Figure3_Input1
 
 ### Top15_Trainind data
